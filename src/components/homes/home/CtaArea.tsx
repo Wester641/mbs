@@ -1,22 +1,27 @@
- 
 const CtaArea = () => {
   return (
     <>
-      <div className="cta-wrap jarallax" data-jarallax="" data-speed="0.6"
-        style={{ backgroundImage: "url(/assets/img/bg-img/1.jpg)", backgroundAttachment: "fixed" }}>
+      <div
+        className="cta-wrap jarallax"
+        data-jarallax=""
+        data-speed="0.6"
+        style={{
+          backgroundSize: "cover",
+          backgroundImage: "url(/assets/img/bg-img/1.jpg)",
+          backgroundAttachment: "fixed",
+        }}
+      >
         <div className="divider"></div>
 
         <div className="container">
           <div className="row justify-content-end">
             <div className="col-12 col-sm-11 col-md-10 col-lg-7 col-xl-6 col-xxl-5">
               <div className="cta-card">
-
                 <div className="total-clients-wrap">
                   <div className="total-number">
-                    <h3>200+</h3>
+                    <h3>50+</h3>
                     <p className="mb-0">Satisfied Customers</p>
                   </div>
-
 
                   <div className="clients-images">
                     <img src="/assets/img/bg-img/5.jpg" alt="" />
@@ -26,26 +31,25 @@ const CtaArea = () => {
                   </div>
                 </div>
 
-
                 <div className="cta-stats">
                   <div>
-                    <h2>100+</h2>
+                    <h2>30+</h2>
                     <p className="mb-0">Global Clients</p>
                   </div>
 
                   <div>
-                    <h2>150+</h2>
-                    <p className="mb-0">Team Members</p>
+                    <h2>13+</h2>
+                    <p className="mb-0">Team members</p>
                   </div>
 
                   <div>
-                    <h2>15+</h2>
-                    <p className="mb-0">Business Experience</p>
+                    <h2>3+</h2>
+                    <p className="mb-0">Team experiance</p>
                   </div>
 
                   <div>
-                    <h2>300+</h2>
-                    <p className="mb-0">Projects Complete</p>
+                    <h2>60+</h2>
+                    <p className="mb-0">Project completed</p>
                   </div>
                 </div>
               </div>
