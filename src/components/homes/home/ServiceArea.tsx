@@ -157,7 +157,7 @@ const ServiceArea = () => {
                   <div
                     onMouseEnter={() => setActiveIndex(i)}
                     onMouseLeave={() => setActiveIndex(null)}
-                    className={`service-slide-card  ${
+                    className={`service-slide-card ${
                       activeIndex === i ? "active" : ""
                     }`}
                   >

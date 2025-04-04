@@ -24,10 +24,10 @@ const CtaArea = () => {
                   </div>
 
                   <div className="clients-images">
-                    <img src="/assets/img/bg-img/5.jpg" alt="" />
-                    <img src="/assets/img/bg-img/4.jpg" alt="" />
-                    <img src="/assets/img/bg-img/3.jpg" alt="" />
-                    <img src="/assets/img/bg-img/2.jpg" alt="" />
+                    <img src="/assets/img/partner-img/1.png" alt="" />
+                    <img src="/assets/img/partner-img/1.png" alt="" />
+                    <img src="/assets/img/partner-img/1.png" alt="" />
+                    <img src="/assets/img/partner-img/1.png" alt="" />
                   </div>
                 </div>
 
