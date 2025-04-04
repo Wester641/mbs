@@ -1,5 +1,3 @@
- 
-
 const HeroArea = () => {
   return (
     <>
@@ -10,14 +8,30 @@ const HeroArea = () => {
           <div className="row">
             <div className="col-12">
               <div className="hero-content">
-                <h2 className="mb-0 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Creative Digital</h2>
-                <h2 className="mb-0 d-md-flex align-items-center wow fadeInUp" data-wow-duration="1000ms"
-                  data-wow-delay="800ms">
-                  Agency
-                  <span className="hero-subtitle mt-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1000ms">
-                    Studio agencies excel in graphic design, design, branding,
-                    and visual elements, offering comprehensive solutions for businesses' design
-                    needs across graphic platforms.</span>
+                <h2
+                  className="mb-0 wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="500ms"
+                >
+                  Custom IT Solutions
+                </h2>
+                <h2
+                  className="mb-0 d-md-flex align-items-center wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="800ms"
+                >
+                  & Web Development
+                  <span
+                    className="hero-subtitle mt-3 wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="1000ms"
+                  >
+                    MBC Soft is a global IT company specializing in web
+                    development, UI/UX design, and tailored digital solutions
+                    for businesses. We help companies worldwide build modern,
+                    high-performance websites and IT systems. Let’s turn your
+                    ideas into reality!
+                  </span>
                 </h2>
               </div>
             </div>
