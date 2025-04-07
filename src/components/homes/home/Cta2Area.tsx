@@ -25,7 +25,7 @@ const Cta2Area = () => {
                 Get in touch, and let’s create something amazing!
               </p>
               <a
-                href="#"
+                href="/contact"
                 className="btn btn-primary wow fadeInUp"
                 data-wow-duration="1000ms"
                 data-wow-delay="1100ms"

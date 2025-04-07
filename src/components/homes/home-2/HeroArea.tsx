@@ -32,7 +32,7 @@ const HeroArea = () => {
                   surest measure of success is when a client partners with us more
                   than half our clients stay with us for longer than a single longer than single longer thanproject.
                 </p>
-                <a href="#" className="btn btn-primary wow fadeInUp" data-wow-duration="1000ms"
+                <a href="/contact" className="btn btn-primary wow fadeInUp" data-wow-duration="1000ms"
                   data-wow-delay="1200ms"><span>CONTACT US</span><span>CONTACT US</span></a>
               </div>
             </div>
