@@ -4,7 +4,7 @@ const ContactArea = () => {
       <div className="contact-details-wrap">
         <div className="divider"></div>
 
-        <div className="container">
+        <div className="container mt-100">
           <div className="row g-4 justify-content-center">
             <div className="col-12 col-md-6 col-lg-4">
               <div className="contact-info-card">
@@ -31,7 +31,7 @@ const ContactArea = () => {
                 </div>
 
                 <p className="mb-0">Phone number</p>
-                <h4>+44 204 577 0077</h4>
+                <h4>+996 500 234 567</h4>
               </div>
             </div>
 
@@ -75,7 +75,7 @@ const ContactArea = () => {
                 </div>
 
                 <p className="mb-0">Office Address</p>
-                <h4>Washington Ave, NY</h4>
+                <h4>Bishkek, Kyrgyzstan</h4>
               </div>
             </div>
           </div>
@@ -83,16 +83,16 @@ const ContactArea = () => {
 
         <div className="divider"></div>
 
-        <div className="maps-wrap">
+        {/* <div className="maps-wrap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280012016!2d-74.14448732737499!3d40.69763123331177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1732385899288!5m2!1sen!2sbd"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-        </div>
+        </div> */}
 
         <div className="contact-form-wrap contact-page-form">
           <div className="container">
-            <div className="row justify-content-center">
+            <div className="row justify-content-center mt-100">
               <div className="col-12 col-lg-10">
                 <div className="contact-form bg-secondary m-0 mt-0">
                   <div className="section-heading text-center">

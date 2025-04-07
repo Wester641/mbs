@@ -7,9 +7,9 @@ const menu_data = [
   },
   {
     id: 2,
-    title: "Pages",
-    link: "#",
-    has_dropdown: true,
+    title: "FAQ",
+    link: "/faq",
+    has_dropdown: false,
     sub_menus: [
       // {
       //   link: "/about-us",
@@ -39,11 +39,11 @@ const menu_data = [
       //   title: "Pricing Plan",
       //   has_inner_dropdown: false,
       // },
-      {
-        link: "/faq",
-        title: "FAQ",
-        has_inner_dropdown: false,
-      },
+      // {
+      //   link: "/faq",
+      //   title: "FAQ",
+      //   has_inner_dropdown: false,
+      // },
       // {
       //   link: "/team",
       //   title: "Team",
@@ -54,11 +54,11 @@ const menu_data = [
       //   title: "Team Details",
       //   has_inner_dropdown: false,
       // },
-      {
-        link: "/404",
-        title: "404 - Error",
-        has_inner_dropdown: false,
-      },
+      // {
+      //   link: "/404",
+      //   title: "404 - Error",
+      //   has_inner_dropdown: false,
+      // },
     ],
   },
   {
@@ -79,6 +79,7 @@ const menu_data = [
     sub_menus: [
       { link: "/service", title: "Service" },
       { link: "/service-details", title: "Service Details" },
+      { link: "/contact", title: "Contact" },
     ],
   },
 ];
