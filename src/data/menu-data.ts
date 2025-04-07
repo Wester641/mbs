@@ -11,11 +11,11 @@ const menu_data = [
     link: "/faq",
     has_dropdown: false,
     sub_menus: [
-      // {
-      //   link: "/about-us",
-      //   title: "About Us",
-      //   has_inner_dropdown: false,
-      // },
+      {
+        link: "/about-us",
+        title: "About Us",
+        has_inner_dropdown: false,
+      },
       // {
       //   link: "#",
       //   title: "Service",

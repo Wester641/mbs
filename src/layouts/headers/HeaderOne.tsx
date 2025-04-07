@@ -107,7 +107,7 @@ const HeaderOne = ({ style_2 }: any) => {
                           display: navTitle === item.title ? "block" : "none",
                         }}
                       >
-                        {item.sub_menus.map((sub_menu, index) => (
+                        {item?.sub_menus?.map((sub_menu, index) => (
                           <li key={index} className="vorix-dd">
                             <Link
                               to={sub_menu.link}
@@ -128,7 +128,7 @@ const HeaderOne = ({ style_2 }: any) => {
                                         : "none",
                                   }}
                                 >
-                                  {sub_menu?.inner_submenu?.map(
+                                  {/* {sub_menu?.inner_submenu?.map(
                                     (inner_menu, inner_index) => (
                                       <li key={inner_index}>
                                         <Link to={inner_menu.link}>
@@ -136,7 +136,7 @@ const HeaderOne = ({ style_2 }: any) => {
                                         </Link>
                                       </li>
                                     )
-                                  )}
+                                  )} */}
                                 </ul>
                               )}
                           </li>
