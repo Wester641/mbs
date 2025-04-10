@@ -15,7 +15,7 @@ const WorkprocessArea = () => {
                   workflow ensures efficiency, quality, and a seamless
                   experience from start to finish.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="/faq" className="btn btn-primary">
                   <span>READ MORE</span>
                   <span>READ MORE</span>
                 </a>

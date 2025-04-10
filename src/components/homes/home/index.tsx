@@ -12,6 +12,7 @@ import TestimonialArea from "./TestimonialArea";
 import HeaderOne from "../../../layouts/headers/HeaderOne";
 import FooterOne from "../../../layouts/footers/FooterOne";
 import BackToTop from "../../../common/BackToTop";
+import OurTools from "./OurTools";
 
 const HomeOne = () => {
   return (
@@ -27,6 +28,7 @@ const HomeOne = () => {
       {/* <AwardsArea /> */}
       <TestimonialArea />
       {/* <BlogArea /> */}
+      <OurTools />
       <Cta2Area />
       <FooterOne />
       <BackToTop />

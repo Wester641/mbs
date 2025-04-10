@@ -26,7 +26,7 @@ const ServiceAbout = () => {
                 </p>
 
                 <div>
-                  <a href="#" className="btn btn-primary mt-1">
+                  <a href="/faq" className="btn btn-primary mt-1">
                     <span>MORE ABOUT US</span>
                     <span>MORE ABOUT US</span>
                   </a>

@@ -64,23 +64,34 @@ const menu_data = [
   {
     id: 3,
     title: "Portfolio",
-    link: "#",
-    has_dropdown: true,
-    sub_menus: [
-      { link: "/portfolio", title: "Portfolio" },
-      { link: "/portfolio-details", title: "Portfolio Details" },
-    ],
+    link: "/portfolio",
+    has_dropdown: false,
+    // sub_menus: [
+    //   { link: "/portfolio", title: "Portfolio" },
+    //   { link: "/portfolio-details", title: "Portfolio Details" },
+    // ],
   },
   {
     id: 4,
     title: "Services",
-    link: "#",
-    has_dropdown: true,
-    sub_menus: [
-      { link: "/service", title: "Service" },
-      { link: "/service-details", title: "Service Details" },
-      { link: "/contact", title: "Contact" },
-    ],
+    link: "/service",
+    has_dropdown: false,
+    // sub_menus: [
+    //   { link: "/service", title: "Service" },
+    //   { link: "/service-details", title: "Service Details" },
+    //   { link: "/contact", title: "Contact" },
+    // ],
+  },
+  {
+    id: 5,
+    title: "Contact",
+    link: "/contact",
+    has_dropdown: false,
+    // sub_menus: [
+    //   { link: "/service", title: "Service" },
+    //   { link: "/service-details", title: "Service Details" },
+    //   { link: "/contact", title: "Contact" },
+    // ],
   },
 ];
 

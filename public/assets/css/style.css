@@ -2152,6 +2152,11 @@ picture.jarallax-img img {
   .partners-slide img {
     max-height: 80px;
   }
+  .project-image {
+    min-height: 450px;
+    min-width: 600px;
+    object-fit: cover;
+  }
 }
 
 /* Portfolio */
@@ -5832,4 +5837,28 @@ form .btn {
 .light-mode .client-testimonial-card {
   border-color: rgba(26, 26, 26, 0.3);
   background: #fefefe;
+}
+.project-image {
+  object-fit: cover;
+  min-height: 300px;
+  min-width: 400px;
+}
+
+@media only screen and (min-width: 768px) {
+  .project-image {
+    min-height: 250px;
+    min-width: 325px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project-image {
+    min-height: 350px;
+    min-width: 450px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .project-image {
+    min-height: 450px;
+    min-width: 600px;
+  }
 }

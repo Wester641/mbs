@@ -5,17 +5,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const services = [
   {
-    icon: "ads_click",
-    title: "Digital Marketing",
-    description:
-      "We help businesses grow online through data-driven digital marketing strategies. From SEO and paid advertising to content marketing and social media management, we ensure your brand reaches the right audience and achieves measurable success.",
-  },
-  {
     icon: "web",
     title: "Web Development",
     description:
       "We craft high-performance, scalable, and secure websites tailored to your business needs. Whether it's a corporate website, eCommerce platform, or custom web application, our expert developers ensure a seamless user experience and cutting-edge functionality.",
   },
+  {
+    icon: "ads_click",
+    title: "Digital Marketing",
+    description:
+      "We help businesses grow online through data-driven digital marketing strategies. From SEO and paid advertising to content marketing and social media management, we ensure your brand reaches the right audience and achieves measurable success.",
+  },
+
   {
     icon: "stream_apps",
     title: "Mobile Development",
@@ -29,17 +30,18 @@ const services = [
       "Design is more than aesthetics—it's about usability, engagement, and conversion. Our UX/UI experts create intuitive, visually striking, and user-friendly interfaces that enhance customer interactions and elevate your brand’s digital presence.",
   },
   {
-    icon: "ads_click",
-    title: "Digital Marketing",
-    description:
-      "We help businesses grow online through data-driven digital marketing strategies. From SEO and paid advertising to content marketing and social media management, we ensure your brand reaches the right audience and achieves measurable success.",
-  },
-  {
     icon: "web",
     title: "Web Development",
     description:
       "We craft high-performance, scalable, and secure websites tailored to your business needs. Whether it's a corporate website, eCommerce platform, or custom web application, our expert developers ensure a seamless user experience and cutting-edge functionality.",
   },
+  {
+    icon: "ads_click",
+    title: "Digital Marketing",
+    description:
+      "We help businesses grow online through data-driven digital marketing strategies. From SEO and paid advertising to content marketing and social media management, we ensure your brand reaches the right audience and achieves measurable success.",
+  },
+
   {
     icon: "stream_apps",
     title: "Mobile Development",
