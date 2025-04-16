@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   { path: "/blog", element: <Blog /> },
   { path: "/blog-details", element: <BlogDetails /> },
   { path: "/contact", element: <Contact /> },
-  { path: "/dode", element: <DodecahedronScene /> },
+  // { path: "/dode", element: <DodecahedronScene /> },
   { path: "*", element: <ErrorArea /> },
 ]);
 
