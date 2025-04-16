@@ -2,9 +2,9 @@
 import ashley2 from "../../public/assets/img/filter-portfolio/ashley2.jpg";
 // import ashley3 from "../../public/assets/img/filter-portfolio/ashley3.jpg";
 // import ashley4 from "../../public/assets/img/filter-portfolio/ashley4.jpg";
-import kg_unaa from "../../public/assets/img/filter-portfolio/kg-unaa.jpg";
+import kg_unaa from "../../public/assets/img/filter-portfolio/kg-unaa3.jpg";
 import ijara3 from "../../public/assets/img/filter-portfolio/ijara3.jpg";
-import color_sh2 from "../../public/assets/img/filter-portfolio/color-sh2.jpg";
+import color_sh2 from "../../public/assets/img/filter-portfolio/color-sh5.jpg";
 
 export const projectListHomePage = [
   {
@@ -45,6 +45,24 @@ export const projectListPortfolioPage = [
   {
     title: "Project 2",
     description: "Description 2",
+    link: "/portfolio",
+    image: ashley2,
+  },
+  {
+    title: "Project 3",
+    description: "Description 3",
+    link: "/portfolio",
+    image: ashley2,
+  },
+  {
+    title: "Project 3",
+    description: "Description 3",
+    link: "/portfolio",
+    image: ashley2,
+  },
+  {
+    title: "Project 3",
+    description: "Description 3",
     link: "/portfolio",
     image: ashley2,
   },
