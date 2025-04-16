@@ -17,6 +17,7 @@ import Blog from "./components/blog";
 import BlogDetails from "./components/blog-details";
 import Contact from "./components/contact";
 import ErrorArea from "./components/error";
+import DodecahedronScene from "./components/dodecahedron/SpinningDodecahedron";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomeOne /> },
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
   { path: "/blog", element: <Blog /> },
   { path: "/blog-details", element: <BlogDetails /> },
   { path: "/contact", element: <Contact /> },
-
+  { path: "/dode", element: <DodecahedronScene /> },
   { path: "*", element: <ErrorArea /> },
 ]);
 
