@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const ServiceArea = () => {
+const ServiceArea2 = () => {
   return (
     <>
       <div className="latest-service-wrapper bg-secondary">
@@ -270,4 +270,4 @@ const ServiceArea = () => {
   );
 };
 
-export default ServiceArea;
+export default ServiceArea2;

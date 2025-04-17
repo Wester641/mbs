@@ -13,6 +13,7 @@ import HeaderOne from "../../../layouts/headers/HeaderOne";
 import FooterOne from "../../../layouts/footers/FooterOne";
 import BackToTop from "../../../common/BackToTop";
 import OurTools from "./OurTools";
+import CategoryArea from "./CategoryArea";
 
 const HomeOne = () => {
   return (
@@ -22,6 +23,7 @@ const HomeOne = () => {
       <CtaArea />
       <ServiceArea />
       <AboutArea />
+      <CategoryArea />
       <ProjectsArea />
       <WorkprocessArea />
       {/* <VideoAreaHomeOne /> */}

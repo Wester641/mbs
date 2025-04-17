@@ -156,31 +156,31 @@ const ServiceDetailsArea = () => {
 
                   <ul className="service-list">
                     <li>
-                      <Link to="/service-details">
+                      <Link to="">
                         Digital Marketing
                         <span className="material-symbols-outlined">arrow_forward</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to="/service-details">
+                      <Link to="">
                         Web Development
                         <span className="material-symbols-outlined">arrow_forward</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to="/service-details">
+                      <Link to="">
                         Mobile Apps
                         <span className="material-symbols-outlined">arrow_forward</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to="/service-details">
+                      <Link to="">
                         UI/UX Design
                         <span className="material-symbols-outlined">arrow_forward</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to="/service-details">
+                      <Link to="">
                         Animation Design
                         <span className="material-symbols-outlined">arrow_forward</span>
                       </Link>

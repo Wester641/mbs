@@ -664,9 +664,14 @@ picture.jarallax-img img {
     margin-right: 3rem;
   }
 }
+
+/* 1200px and above added height 30px for imagem if it needed you can left or remove it */
 @media only screen and (min-width: 1200px) {
   .header-area .navbar .navbar-brand {
     margin-right: 4rem;
+  }
+  .header-area .navbar .navbar-brand img {
+    height: 30px;
   }
 }
 .header-area .navbar-nav {
@@ -2156,6 +2161,9 @@ picture.jarallax-img img {
     min-height: 450px;
     min-width: 600px;
     object-fit: cover;
+  }
+  .portfolio-card img {
+    height: 460px;
   }
 }
 
@@ -5858,7 +5866,7 @@ form .btn {
 }
 @media only screen and (min-width: 1200px) {
   .project-image {
-    min-height: 450px;
+    height: 460px;
     min-width: 600px;
   }
 }
@@ -5882,7 +5890,7 @@ form .btn {
   height: clamp(42px, 5vw, 100px);
   width: clamp(42px, 5vw, 100px);
 }
-.service-wrapper h2 {
+.our-tools-title {
   color: #fefefe;
   font-size: clamp(42px, 5vw, 80px);
   font-weight: 700;

@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Wrapper from "./layouts/Wrapper";
 import HomeOne from "./components/homes/home";
-import HomeTwo from "./components/homes/home-2";
+// import HomeTwo from "./components/homes/home-2";
 import Aboutus from "./components/about-us";
 import Service from "./components/service";
-import ServiceDetails from "./components/service-details";
+// import ServiceDetails from "./components";
 import Register from "./components/register";
 import Login from "./components/login";
 import PricingPlan from "./components/pricing-plan";
@@ -20,10 +20,10 @@ import ErrorArea from "./components/error";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomeOne /> },
-  { path: "/home-2", element: <HomeTwo /> },
+  // { path: "/home-2", element: <HomeTwo /> },
   { path: "/about-us", element: <Aboutus /> },
   { path: "/service", element: <Service /> },
-  { path: "/service-details", element: <ServiceDetails /> },
+  // { path: "/service-details", element: <ServiceDetails /> },
   { path: "/register", element: <Register /> },
   { path: "/login", element: <Login /> },
   { path: "/pricing-plan", element: <PricingPlan /> },

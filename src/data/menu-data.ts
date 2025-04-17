@@ -22,7 +22,7 @@ const menu_data = [
       //   has_inner_dropdown: true,
       //   inner_submenu: [
       //     { link: "/service", title: "Service" },
-      //     { link: "/service-details", title: "Service Details" },
+      //     { link: "", title: "Service Details" },
       //   ],
       // },
       // {
@@ -78,7 +78,7 @@ const menu_data = [
     has_dropdown: false,
     // sub_menus: [
     //   { link: "/service", title: "Service" },
-    //   { link: "/service-details", title: "Service Details" },
+    //   { link: "", title: "Service Details" },
     //   { link: "/contact", title: "Contact" },
     // ],
   },
@@ -89,7 +89,7 @@ const menu_data = [
     has_dropdown: false,
     // sub_menus: [
     //   { link: "/service", title: "Service" },
-    //   { link: "/service-details", title: "Service Details" },
+    //   { link: "", title: "Service Details" },
     //   { link: "/contact", title: "Contact" },
     // ],
   },

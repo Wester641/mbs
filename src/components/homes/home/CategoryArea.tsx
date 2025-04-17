@@ -1,5 +1,3 @@
- 
-
 import { useState, useEffect, FC, lazy, Suspense } from "react";
 
 const Marquee = lazy(() => import("react-fast-marquee"));
@@ -11,7 +9,7 @@ const CategoryArea: FC = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;  
+  if (!mounted) return null;
 
   return (
     <div className="catagory-slide" id="catagorySlide">
@@ -19,12 +17,12 @@ const CategoryArea: FC = () => {
         <Suspense fallback={null}>
           <Marquee gradient={false} speed={50}>
             <h2 className="d-flex align-items-center mb-0">
-              <span>#</span>
               <span>Web Design</span>
-              <span>#</span>
+              <img src="/assets/img/partner-img/1.png" alt="" />
               <span>Web Development</span>
-              <span>#</span>
+              <img src="/assets/img/partner-img/1.png" alt="" />
               <span>UI/UX Design</span>
+              <img src="/assets/img/partner-img/1.png" alt="" />
             </h2>
           </Marquee>
         </Suspense>
@@ -34,4 +32,3 @@ const CategoryArea: FC = () => {
 };
 
 export default CategoryArea;
-

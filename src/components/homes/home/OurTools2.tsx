@@ -46,7 +46,7 @@ const OurTools = () => {
           <div className="row g-4 g-lg-5">
             {services.map((item, i) => (
               <div key={i} className="col-12 col-md-6 col-xl-2">
-                <Link to="/service-details">
+                <Link to="">
                   <div
                     onMouseEnter={() => setActiveIndex(i)}
                     onMouseLeave={() => setActiveIndex(null)}

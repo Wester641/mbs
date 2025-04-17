@@ -8,7 +8,7 @@ const OurTools = () => {
     <>
       <div className="service-wrapper">
         <h2
-          className="wow fadeInUp"
+          className="wow fadeInUp our-tools-title"
           data-wow-duration="1000ms"
           data-wow-delay="700ms"
         >

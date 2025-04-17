@@ -155,7 +155,7 @@ const ServiceArea = () => {
           >
             {services.map((item, i) => (
               <SwiperSlide key={i} className="swiper-slide">
-                <Link to="/service-details">
+                <Link to="">
                   <div
                     onMouseEnter={() => setActiveIndex(i)}
                     onMouseLeave={() => setActiveIndex(null)}
