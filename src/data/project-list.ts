@@ -1,10 +1,13 @@
-// import ashley from "../../public/assets/img/filter-portfolio/ashley.jpg";
 import ashley2 from "../../public/assets/img/filter-portfolio/ashley2.jpg";
-// import ashley3 from "../../public/assets/img/filter-portfolio/ashley3.jpg";
-// import ashley4 from "../../public/assets/img/filter-portfolio/ashley4.jpg";
 import kg_unaa from "../../public/assets/img/filter-portfolio/kg-unaa3.jpg";
 import ijara3 from "../../public/assets/img/filter-portfolio/ijara3.jpg";
 import color_sh2 from "../../public/assets/img/filter-portfolio/color-sh5.jpg";
+import elibay from "../../public/assets/img/filter-portfolio/elibay2.jpg";
+import gym from "../../public/assets/img/filter-portfolio/gym.jpg";
+import idac from "../../public/assets/img/filter-portfolio/idac.jpg";
+import west_consult from "../../public/assets/img/filter-portfolio/wes2.jpg";
+import primex from "../../public/assets/img/filter-portfolio/primex1.jpg";
+import rayan from "../../public/assets/img/filter-portfolio/rayan.jpg";
 
 export const projectListHomePage = [
   {
@@ -37,45 +40,77 @@ export const projectListHomePage = [
 
 export const projectListPortfolioPage = [
   {
-    title: "Project 1",
-    description: "Description 1",
+    id: 1,
+    title: "Ashley — Digital space for interior designers",
+    description: "Aesthetics and functionality in every detail",
     link: "/portfolio",
     image: ashley2,
   },
   {
-    title: "Project 2",
-    description: "Description 2",
+    id: 2,
+    title:
+      "Kyrgyz Unaa — Digital showcase of the engineering giant of Kyrgyzstan",
+    description: "Heavy industrial production in a modern online format",
     link: "/portfolio",
-    image: ashley2,
+    image: kg_unaa,
   },
   {
-    title: "Project 3",
-    description: "Description 3",
+    id: 3,
+    title: "Ijara Company KR - Leasing solutions in a new digital look",
+    description:
+      "Simplicity, trust and Islamic financial principles - now online",
     link: "/portfolio",
-    image: ashley2,
+    image: ijara3,
   },
   {
-    title: "Project 3",
-    description: "Description 3",
+    id: 4,
+    title: "Color Shields - Premium Epoxy Garage Coatings",
+    description: "Brutal style and trust in quality - in every pixel",
     link: "/portfolio",
-    image: ashley2,
+    image: color_sh2,
   },
   {
-    title: "Project 3",
-    description: "Description 3",
+    id: 5,
+    title: "West Consult — Consulting support for US trucking companies",
+    description:
+      "Legal, accounting and operational assistance to logistics businesses",
     link: "/portfolio",
-    image: ashley2,
+    image: west_consult,
   },
   {
-    title: "Project 3",
-    description: "Description 3",
+    id: 7,
+    title: "Primex - Global Delivery with a Local Touch",
+    description: "Reliable logistics between the USA and the CIS countries",
     link: "/portfolio",
-    image: ashley2,
+    image: primex,
   },
   {
-    title: "Project 3",
-    description: "Description 3",
+    id: 8,
+    title: "Eilbay — Local Marketplace of the New Generation",
+    description:
+      "Universal platform for buying and selling goods in Kyrgyzstan",
     link: "/portfolio",
-    image: ashley2,
+    image: elibay,
+  },
+  {
+    id: 8,
+    title: "Rayan Hotel — Modern hotel in the center of Bishkek",
+    description: "World-class comfort and intuitive online booking service",
+    link: "/portfolio",
+    image: rayan,
+  },
+  {
+    id: 6,
+    title: "GYM24: Personal Fitness 24/7",
+    description: "Modern gym with a personal approach",
+    link: "/portfolio",
+    image: gym,
+  },
+  {
+    id: 7,
+    title: "Car and Housing Rentals Without the Hassle",
+    description: "Simple and fast rental process with user-friendly interface",
+    link: "/portfolio",
+    image: idac,
   },
 ];

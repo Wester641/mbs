@@ -1,38 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-
-const services = [
-  {
-    icon: "ads_click",
-    title: "Digital Marketing",
-    description: "Designed user interface contributes",
-  },
-  {
-    icon: "web",
-    title: "Web Development",
-    description: "Designed user interface contributes",
-  },
-  {
-    icon: "stream_apps",
-    title: "Mobile Apps",
-    description: "Designed user interface contributes",
-  },
-  {
-    icon: "design_services",
-    title: "UI/UX Design",
-    description: "Designed user interface contributes",
-  },
-  {
-    icon: "ads_click",
-    title: "Digital Marketing",
-    description: "Designed user interface contributes",
-  },
-  {
-    icon: "web",
-    title: "Web Development",
-    description: "Designed user interface contributes",
-  },
-];
+import { stack } from "../../../data/stack";
 
 const OurTools = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -40,41 +7,29 @@ const OurTools = () => {
   return (
     <>
       <div className="service-wrapper">
+        <h2
+          className="wow fadeInUp"
+          data-wow-duration="1000ms"
+          data-wow-delay="700ms"
+        >
+          Our tools
+        </h2>
         <div className="divider"></div>
-
         <div className="container">
-          <div className="row g-4 g-lg-5">
-            {services.map((item, i) => (
-              <div key={i} className="col-12 col-md-6 col-xl-2">
-                <Link to="/service-details">
-                  <div
-                    onMouseEnter={() => setActiveIndex(i)}
-                    onMouseLeave={() => setActiveIndex(null)}
-                    className={`service-slide-card  ${
-                      activeIndex === i ? "active" : ""
-                    }`}
-                  >
-                    <span className="material-symbols-outlined">
-                      {item.icon}
-                    </span>
-                    <h2
-                      style={{ bottom: `${activeIndex === i ? "140px" : ""}` }}
-                    >
-                      {item.title}
-                    </h2>
-                    <p
-                      className="mb-0"
-                      style={{ bottom: `${activeIndex === i ? "45px" : ""}` }}
-                    >
-                      {item.description}
-                    </p>
-                  </div>
-                </Link>
+          <div className="row g-1 g-lg-1">
+            {stack.map((item, i) => (
+              <div key={item.id} className="col-1 col-md-1 col-xl-1">
+                <div
+                  onMouseEnter={() => setActiveIndex(i)}
+                  onMouseLeave={() => setActiveIndex(null)}
+                  className={`our-tools ${activeIndex === i ? "active" : ""}`}
+                >
+                  <img src={item.image} alt="" />
+                </div>
               </div>
             ))}
           </div>
         </div>
-
         <div className="divider"></div>
       </div>
     </>
