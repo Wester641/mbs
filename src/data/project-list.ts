@@ -58,6 +58,7 @@ export const projectListPortfolioPage = [
         "As a result, we got an elegant site that emphasizes the aesthetics of the brand and builds trust from the very first seconds. The studio has acquired a strong online image that has become a true extension of their offline style and attracts customers not only visually, but also through ease of navigation.",
       category: "Business, marketing",
       date: "2024",
+      link: "https://miller.bslthemes.com/ashley-demo/home-1.html?storefront=envato-elements",
     },
   },
   {
@@ -80,6 +81,7 @@ export const projectListPortfolioPage = [
         "The result is a functional corporate website that unites all areas of the plant in a single style. Now Kyrgyz Unaa can effectively present itself on the market, both within the country and abroad.",
       category: "Production, Mechanical Engineering",
       date: "2023",
+      link: "https://kyrgyzuna.kg",
     },
   },
   {
@@ -101,6 +103,7 @@ export const projectListPortfolioPage = [
         "The result is a clean, easy-to-navigate website that combines a modern interface and respect for religious principles. The company received a tool that helps not only talk about itself, but also automate interactions with clients.",
       category: "Finance, Leasing",
       date: "2023",
+      link: "https://www.ick.kg/en/",
     },
   },
   {
@@ -122,6 +125,7 @@ export const projectListPortfolioPage = [
         "The result is a modern, informative and visually strong website that perfectly conveys the character of the brand. It is successfully used in digital marketing and helps the company find new clients online.",
       category: "Business",
       date: "2025",
+      link: "https://colorshields.com/",
     },
   },
   {
@@ -143,6 +147,7 @@ export const projectListPortfolioPage = [
         "The result is an informative and visually clean website, which has become the main tool for attracting customers through online channels. The company confidently positions itself in the digital environment and scales its business.",
       category: "Finance, Leasing",
       date: "2025",
+      link: "https://thewestconsult.com/",
     },
   },
   {
@@ -163,6 +168,7 @@ export const projectListPortfolioPage = [
         "The result is a functional, stylish and customer-oriented website that has become a key channel for attracting new users and orders. Primex has strengthened its position in the delivery market and simplified the path for customers from ordering to receiving a parcel.",
       category: "Finance, Delivery",
       date: "2024",
+      link: "https://primexcargo.org/",
     },
   },
   {
@@ -184,6 +190,7 @@ export const projectListPortfolioPage = [
         "The result is a functional, easy-to-use e-commerce platform that is actively gaining popularity in the region. The project has become an excellent example of a localized marketplace with a modern presentation.",
       category: "Marketplace",
       date: "2025",
+      link: "https://eilbay.com/?type=2",
     },
   },
   {
@@ -204,6 +211,7 @@ export const projectListPortfolioPage = [
         "The site has become a powerful tool for direct booking and has increased the online presence of the hotel. The number of direct requests has increased, and users began to stay on the pages longer - this increased conversion.",
       category: "Tourism",
       date: "2024",
+      link: "https://rayanhotel.kg/ru/",
     },
   },
   {
@@ -224,6 +232,7 @@ export const projectListPortfolioPage = [
         "The site has become a powerful tool for attracting new clients. Due to its convenience and design, the flow of online applications has increased, and the brand has become noticeable against the background of competitors.",
       category: "Sport",
       date: "2024",
+      link: "#",
     },
   },
   {
@@ -244,35 +253,7 @@ export const projectListPortfolioPage = [
         "The site successfully simplified the rental process, improving the customer experience and increasing the number of bookings. The platform attracted the attention of users who value ease and speed when searching for a rental.",
       category: "Business, Rent",
       date: "2024",
+      link: "#",
     },
-  },
-];
-
-export const projectListHomePage = [
-  {
-    title: "Ashley — Digital space for interior designers",
-    description: "Aesthetics and functionality in every detail",
-    link: "/portfolio",
-    image: ashley2,
-  },
-  {
-    title:
-      "Kyrgyz Unaa — Digital showcase of the engineering giant of Kyrgyzstan",
-    description: "Heavy industrial production in a modern online format",
-    link: "/portfolio",
-    image: kg_unaa,
-  },
-  {
-    title: "Ijara Company KR - Leasing solutions in a new digital look",
-    description:
-      "Simplicity, trust and Islamic financial principles - now online",
-    link: "/portfolio",
-    image: ijara3,
-  },
-  {
-    title: "Color Shields - Premium Epoxy Garage Coatings",
-    description: "Brutal style and trust in quality - in every pixel",
-    link: "/portfolio",
-    image: color_sh2,
   },
 ];

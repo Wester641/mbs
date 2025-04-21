@@ -1,7 +1,10 @@
-import { projectListHomePage } from "../../../data/project-list";
+import { Link } from "react-router-dom";
+import { projectListPortfolioPage } from "../../../data/project-list";
 import "./../../../../public/assets/css/style.css";
 
 const ProjectsArea = () => {
+  const projects = projectListPortfolioPage.slice(0, 4);
+
   return (
     <>
       <div className="projects-wrapper bg-secondary">
@@ -28,7 +31,7 @@ const ProjectsArea = () => {
           <div className="divider-sm"></div>
 
           <div className="row g-4 g-xl-5">
-            {projectListHomePage.map((project) => (
+            {projects.map((project) => (
               <div className="col-md-6">
                 <div className="portfolio-card">
                   <img className="project-image" src={project.image} alt="" />
@@ -39,7 +42,7 @@ const ProjectsArea = () => {
                       <p className="mb-0">{project.description}</p>
                     </div>
 
-                    <a href={project.link} className="btn">
+                    <Link to={`/portfolio/${project.id}`} className="btn">
                       <span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +71,7 @@ const ProjectsArea = () => {
                           />
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

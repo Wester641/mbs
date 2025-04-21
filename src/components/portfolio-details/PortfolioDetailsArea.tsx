@@ -83,6 +83,18 @@ const PortfolioDetailsArea = () => {
                   <h5 className="mb-0">{project.project_details.date}</h5>
                 </div>
 
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="text-md-end">
+                    <a
+                      href={project.project_details.link}
+                      className="btn btn-primary"
+                    >
+                      <span>VIEW THE WEBSITE</span>
+                      <span>VIEW THE WEBSITE</span>
+                    </a>
+                  </div>
+                </div>
+
                 <div className="social-nav">
                   <a href="https://t.me/Ayryskeldi">
                     <svg
