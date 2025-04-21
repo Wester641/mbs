@@ -1103,6 +1103,7 @@ picture.jarallax-img img {
 .hero-wrapper {
   margin-top: 68px;
 }
+
 @media only screen and (min-width: 992px) {
   .hero-wrapper {
     margin-top: 110px;
@@ -1112,7 +1113,7 @@ picture.jarallax-img img {
 .hero-content h2 {
   font-weight: 700;
   letter-spacing: -3.6px;
-  font-size: 56px;
+  font-size: 40px;
 }
 @media only screen and (min-width: 768px) {
   .hero-content h2 {
@@ -2748,7 +2749,7 @@ form .btn {
 }
 .testimonial-swiper .swiper-navigation-container {
   position: absolute;
-  top: 24px;
+  top: 500px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;

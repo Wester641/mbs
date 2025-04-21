@@ -18,7 +18,7 @@ const OurTools = () => {
         <div className="container">
           <div className="row g-1 g-lg-1">
             {stack.map((item, i) => (
-              <div key={item.id} className="col-1 col-md-1 col-xl-1">
+              <div key={item.id} className="col-2 col-sm-2 col-md-1 col-xl-1">
                 <div
                   onMouseEnter={() => setActiveIndex(i)}
                   onMouseLeave={() => setActiveIndex(null)}
