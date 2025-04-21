@@ -36,17 +36,6 @@ const PortfolioDetailsArea = () => {
                   </div>
                 </div>
 
-                {/* <p>{project.project_details.detail_description}</p> */}
-
-                {/* <p>
-                  When an unknown printer took ar galley offer type year anddey
-                  scrambled make aewer specimen a book bethas survived not only
-                  five when anner year unknown printer eed little help from
-                  friend from time to time. Although we offer the one-stop
-                  convenience. unknown printer took galley type year anddey
-                  scrambled. unknown printer.
-                </p> */}
-
                 <div className="d-flex gap-3 flex-column">
                   <h3>Challenge & Solution </h3>
                   {project.project_details.challenge_and_solution}
@@ -62,16 +51,6 @@ const PortfolioDetailsArea = () => {
             <div className="col-12 col-lg-4">
               <div className="portfolio-widget">
                 <h4 className="mb-4">Project Information</h4>
-
-                {/* <div className="mb-4">
-                  <p className="mb-0">Client</p>
-                  <h5 className="mb-0">Jessica Brown</h5>
-                </div> */}
-
-                {/* <div className="mb-4">
-                  <p className="mb-0">Cost</p>
-                  <h5 className="mb-0">USD 1,50,499</h5>
-                </div> */}
 
                 <div className="mb-4">
                   <p className="mb-0">Category</p>
