@@ -45,6 +45,7 @@ import trello from "../../public/assets/stack/trello.svg";
 import typescript from "../../public/assets/stack/typescript.svg";
 import websocket from "../../public/assets/stack/websocket.svg";
 import xmind from "../../public/assets/stack/xmind.svg";
+import vue from "../../public/assets/stack/vue1.png";
 
 export const stack = [
   {
@@ -239,5 +240,9 @@ export const stack = [
   {
     id: 47,
     image: xmind,
+  },
+  {
+    id: 48,
+    image: vue,
   },
 ];
