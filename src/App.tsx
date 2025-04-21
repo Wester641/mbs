@@ -17,6 +17,7 @@ import Blog from "./components/blog";
 import BlogDetails from "./components/blog-details";
 import Contact from "./components/contact";
 import ErrorArea from "./components/error";
+import PortfolioDetailsArea from "./components/portfolio-details/PortfolioDetailsArea";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomeOne /> },
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
   { path: "/blog", element: <Blog /> },
   { path: "/blog-details", element: <BlogDetails /> },
   { path: "/contact", element: <Contact /> },
+  { path: "/portfolio/:id", element: <PortfolioDetailsArea /> },
 
   { path: "*", element: <ErrorArea /> },
 ]);
