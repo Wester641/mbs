@@ -23,12 +23,16 @@ const CtaArea = () => {
                     <p className="mb-0">Satisfied Customers</p>
                   </div>
 
-                  <div className="clients-images">
+                  {/* <div className="clients-images">
+                    <img src="" />
+                    <img src="" />
+                    <img src="" />
+                    <img src="" />
+                    {/* <img src="/assets/img/partner-img/1.png" alt="" />
                     <img src="/assets/img/partner-img/1.png" alt="" />
                     <img src="/assets/img/partner-img/1.png" alt="" />
-                    <img src="/assets/img/partner-img/1.png" alt="" />
-                    <img src="/assets/img/partner-img/1.png" alt="" />
-                  </div>
+                    <img src="/assets/img/partner-img/1.png" alt="" /> */}
+                  {/* </div> */}
                 </div>
 
                 <div className="cta-stats">

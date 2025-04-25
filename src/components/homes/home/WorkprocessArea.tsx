@@ -52,7 +52,7 @@ const WorkprocessArea = () => {
 
                 <div className="process-card">
                   <div className="number">3</div>
-                  <div className="process-text">
+                  <div className="process-text long-card">
                     <h4>Development & Implementation</h4>
                     <p className="mb-0">
                       Using modern technologies and best coding practices, our
