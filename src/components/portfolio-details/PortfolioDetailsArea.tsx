@@ -4,7 +4,7 @@ import { projectListPortfolioPage } from "../../data/project-list";
 const PortfolioDetailsArea = () => {
   const { id } = useParams();
 
-  const project = projectListPortfolioPage.find((p) => p.id === parseInt(id!));
+  const project = projectListPortfolioPage.find((p) => p.id === id);
 
   if (!project) return <p>Project is not defined</p>;
 

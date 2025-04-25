@@ -1,10 +1,13 @@
+import Dodecahedron from "../../../common/dodehodron/Dodecahedron";
+
 const HeroArea = () => {
   return (
     <>
-      <section className="hero-wrapper">
+      <section className="hero-wrapper mil-banner-personal">
         <div className="divider"></div>
-
         <div className="container">
+          <Dodecahedron />
+
           <div className="row">
             <div className="col-12">
               <div className="hero-content">
@@ -37,7 +40,6 @@ const HeroArea = () => {
             </div>
           </div>
         </div>
-
         <div className="divider"></div>
       </section>
     </>

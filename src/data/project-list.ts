@@ -41,7 +41,7 @@ import west_consult3 from "../../public/assets/img/filter-portfolio/west3.jpg";
 
 export const projectListPortfolioPage = [
   {
-    id: 10,
+    id: "ashley",
     title: "Ashley — Digital space for interior designers",
     description: "Aesthetics and functionality in every detail",
     link: "/portfolio",
@@ -62,7 +62,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 20,
+    id: "kg_unaa",
     title:
       "Kyrgyz Unaa — Digital showcase of the engineering giant of Kyrgyzstan",
     description: "Heavy industrial production in a modern online format",
@@ -85,7 +85,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 30,
+    id: "ijara",
     title: "Ijara Company KR - Leasing solutions in a new digital look",
     description:
       "Simplicity, trust and Islamic financial principles - now online",
@@ -107,7 +107,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 40,
+    id: "color_sh",
     title: "Color Shields - Premium Epoxy Garage Coatings",
     description: "Brutal style and trust in quality - in every pixel",
     link: "/portfolio",
@@ -129,7 +129,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 50,
+    id: "west_consult",
     title: "West Consult — Consulting support for US trucking companies",
     description:
       "Legal, accounting and operational assistance to logistics businesses",
@@ -151,7 +151,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 60,
+    id: "primex",
     title: "Primex - Global Delivery with a Local Touch",
     description: "Reliable logistics between the USA and the CIS countries",
     link: "/portfolio",
@@ -172,7 +172,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 70,
+    id: "eilbay",
     title: "Eilbay — Local Marketplace of the New Generation",
     description:
       "Universal platform for buying and selling goods in Kyrgyzstan",
@@ -194,7 +194,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 80,
+    id: "rayan",
     title: "Rayan Hotel — Modern hotel in the center of Bishkek",
     description: "World-class comfort and intuitive online booking service",
     link: "/portfolio",
@@ -215,7 +215,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 90,
+    id: "gym24",
     title: "GYM24: Personal Fitness 24/7",
     description: "Modern gym with a personal approach",
     link: "/portfolio",
@@ -236,7 +236,7 @@ export const projectListPortfolioPage = [
     },
   },
   {
-    id: 100,
+    id: "idac",
     title: "Car and Housing Rentals Without the Hassle",
     description: "Simple and fast rental process with user-friendly interface",
     link: "/portfolio",
