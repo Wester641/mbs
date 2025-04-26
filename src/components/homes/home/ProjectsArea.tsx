@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { projectListPortfolioPage } from "../../../data/project-list";
-import "./../../../../public/assets/css/style.css";
 
 const ProjectsArea = () => {
   const projects = projectListPortfolioPage.slice(0, 4);
