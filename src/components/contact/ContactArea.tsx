@@ -102,6 +102,40 @@ const ContactArea = () => {
                 <h4>Vienna, Chicago, London</h4>
               </address>
             </article>
+
+            {/*  social-media */}
+            <article className="col-12 col-md-6 col-lg-4">
+              <address className="contact-info-card__2">
+                <figure className="icon-wrapper__2" aria-hidden="true">
+                  <a href="https://www.instagram.com/mbc.soft/">
+                    <img
+                      className="social-link-contact"
+                      src="/assets/img/social-icon/instagram.png"
+                      alt="instagram-link"
+                    />
+                  </a>
+                </figure>
+
+                <figure className="icon-wrapper__2" aria-hidden="true">
+                  <a href="https://t.me/Ayryskeldi">
+                    <img
+                      className="social-link-contact"
+                      src="/assets/img/social-icon/telegram.png"
+                      alt="telegram-link"
+                    />
+                  </a>
+                </figure>
+                <figure className="icon-wrapper__2" aria-hidden="true">
+                  <a href="https://wa.link/s22axy">
+                    <img
+                      className="social-link-contact"
+                      src="/assets/img/social-icon/whatsapp.png"
+                      alt="whatsapp-link"
+                    />
+                  </a>
+                </figure>
+              </address>
+            </article>
           </div>
         </div>
 

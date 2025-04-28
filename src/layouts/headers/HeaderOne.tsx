@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useSticky from "../../hooks/use-sticky";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import menu_data from "../../data/menu-data";
 import OffCanvas from "../../common/OffCanvas";
 
@@ -56,7 +56,7 @@ const HeaderOne = ({ style_2 }: any) => {
       >
         <nav className="navbar navbar-expand-lg">
           <div className="container">
-            <Link className="navbar-brand" to="/">
+            <NavLink className="navbar-brand" to="/">
               <img
                 className="dark-logo"
                 src="/assets/img/core-img/logo.png"
@@ -67,7 +67,7 @@ const HeaderOne = ({ style_2 }: any) => {
                 src="/assets/img/core-img/logo-light.png"
                 alt=""
               />
-            </Link>
+            </NavLink>
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -91,13 +91,16 @@ const HeaderOne = ({ style_2 }: any) => {
               <ul className="navbar-nav navbar-nav-scroll">
                 {menu_data.map((item, i) => (
                   <li key={i} className="vorix-dd">
-                    <Link
+                    <NavLink
                       to={item.link}
+                      className={({ isActive }) =>
+                        isActive ? "active-link " : ""
+                      }
                       onMouseEnter={() => setNavTitle(item.title)}
                       onClick={() => openMobileMenu(item.title)}
                     >
                       {item.title}
-                    </Link>
+                    </NavLink>
                     {item.has_dropdown && (
                       <ul
                         className="vorix-dd-menu"
@@ -107,13 +110,13 @@ const HeaderOne = ({ style_2 }: any) => {
                       >
                         {item?.sub_menus?.map((sub_menu, index) => (
                           <li key={index} className="vorix-dd">
-                            <Link
+                            <NavLink
                               to={sub_menu.link}
                               onClick={() => openMobileMenu2(sub_menu.title)}
                               onMouseEnter={() => setNavTitle2(sub_menu.title)}
                             >
                               {sub_menu.title}
-                            </Link>
+                            </NavLink>
 
                             {"has_inner_dropdown" in sub_menu &&
                               sub_menu.has_inner_dropdown && (
