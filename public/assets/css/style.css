@@ -2402,24 +2402,37 @@ picture.jarallax-img img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+.partners-slide__2 {
+  width: 100%;
+  background-color: #0e0e0e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 24px;
+}
 @media only screen and (min-width: 992px) {
-  .catagory-slide {
+  .catagory-slide,
+  .partners-slide__2 {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-.catagory-slide h2 {
+.catagory-slide h2,
+.partners-slide__2 h2 {
   color: #0e0e0e;
   font-size: 42px;
   letter-spacing: -1.62px;
   gap: 60px;
 }
 @media only screen and (min-width: 992px) {
-  .catagory-slide h2 {
+  .catagory-slide h2,
+  .partners-slide__2 h2 {
     font-size: 54px;
   }
 }
-.catagory-slide h2 span:nth-child(1) {
+.catagory-slide h2 span:nth-child(1),
+.partners-slide__2 h2 span:nth-child(1) {
+  padding-left: 60px;
   padding-left: 60px;
 }
 

@@ -17,12 +17,8 @@ const CategoryArea: FC = () => {
         <Suspense fallback={null}>
           <Marquee gradient={false} speed={50}>
             <h2 className="d-flex align-items-center mb-0">
-              <span>Web Design</span>
-              <img src="/assets/img/partner-img/1.png" alt="" />
-              <span>Web Development</span>
-              <img src="/assets/img/partner-img/1.png" alt="" />
-              <span>UI/UX Design</span>
-              <img src="/assets/img/partner-img/1.png" alt="" />
+              <span>Web Design</span> # <span>Web Development</span> #
+              <span>UI/UX Design</span> #
             </h2>
           </Marquee>
         </Suspense>
