@@ -1,4 +1,27 @@
+import { useState } from "react";
+
 const ContactArea = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    const data = {
+      name,
+      email,
+      phone,
+      message,
+    };
+
+    console.log(data);
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  };
   return (
     <>
       <section className="contact-details-wrap">
@@ -120,6 +143,7 @@ const ContactArea = () => {
                           Your Name
                         </label>
                         <input
+                          onChange={(e) => setName(e.target.value)}
                           id="name"
                           name="name"
                           type="text"
@@ -133,6 +157,7 @@ const ContactArea = () => {
                           Email Address
                         </label>
                         <input
+                          onChange={(e) => setEmail(e.target.value)}
                           id="email"
                           name="email"
                           type="email"
@@ -146,6 +171,7 @@ const ContactArea = () => {
                           Your Phone
                         </label>
                         <input
+                          onChange={(e) => setPhone(e.target.value)}
                           id="phone"
                           name="phone"
                           type="tel"
@@ -159,6 +185,7 @@ const ContactArea = () => {
                           Your Message
                         </label>
                         <textarea
+                          onChange={(e) => setMessage(e.target.value)}
                           id="message"
                           name="message"
                           className="form-control"
@@ -171,6 +198,7 @@ const ContactArea = () => {
                       <div className="col-12">
                         <div className="text-center">
                           <button
+                            onClick={handleSubmit}
                             type="submit"
                             className="btn btn-primary rounded-pill"
                           >

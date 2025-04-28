@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import useSticky from "../../hooks/use-sticky";
 import { Link } from "react-router-dom";
 import menu_data from "../../data/menu-data";
-import SearchArea from "../../common/SearchArea";
 import OffCanvas from "../../common/OffCanvas";
 
 const HeaderOne = ({ style_2 }: any) => {
@@ -25,7 +24,6 @@ const HeaderOne = ({ style_2 }: any) => {
   };
 
   const { sticky } = useSticky();
-  const [isSearchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openCanvas, setOpenCavas] = useState(false);
 
@@ -243,7 +241,6 @@ const HeaderOne = ({ style_2 }: any) => {
           </div>
         </nav>
       </header>
-      <SearchArea setSearchOpen={setSearchOpen} isSearchOpen={isSearchOpen} />
       <OffCanvas setOpenCavas={setOpenCavas} openCanvas={openCanvas} />
     </>
   );
