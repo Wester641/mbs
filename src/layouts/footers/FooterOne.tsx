@@ -63,19 +63,19 @@ const FooterOne = ({ style_2 }: { style_2?: boolean }) => {
 
                 <ul className="footer-nav">
                   <li>
-                    <a href="/service">UI/UX Design</a>
+                    <a href="/services">UI/UX Design</a>
                   </li>
                   <li>
-                    <a href="/service">Mobile Apps Design</a>
+                    <a href="/services">Mobile Apps Design</a>
                   </li>
                   <li>
-                    <a href="/service">Web Development</a>
+                    <a href="/services">Web Development</a>
                   </li>
                   <li>
-                    <a href="/service">SaaS Design</a>
+                    <a href="/services">SaaS Design</a>
                   </li>
                   <li>
-                    <a href="/service">Webflow Design</a>
+                    <a href="/services">Webflow Design</a>
                   </li>
                 </ul>
               </div>

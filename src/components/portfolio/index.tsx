@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import BackToTop from "../../common/BackToTop";
 import Breacrumb from "../../common/Breacrumb";
 import FooterOne from "../../layouts/footers/FooterOne";
@@ -6,6 +7,10 @@ import Cta2Area from "../homes/home/Cta2Area";
 import PortfolioArea from "./PortfolioArea";
 
 const Portfolio = () => {
+  useEffect(() => {
+    document.title = "Web & Mobile Development Portfolio | MBS Soft";
+  }, []);
+
   return (
     <>
       <HeaderOne />

@@ -1,14 +1,14 @@
 const ContactArea = () => {
   return (
     <>
-      <div className="contact-details-wrap">
-        <div className="divider"></div>
+      <section className="contact-details-wrap">
+        <div className="divider" aria-hidden="true"></div>
 
         <div className="container mt-100">
           <div className="row g-4 justify-content-center">
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="contact-info-card">
-                <div className="icon-wrapper">
+            <article className="col-12 col-md-6 col-lg-4">
+              <address className="contact-info-card">
+                <figure className="icon-wrapper" aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
@@ -28,16 +28,17 @@ const ContactArea = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                </div>
-
+                </figure>
                 <p className="mb-0">Phone number</p>
-                <h4>+996 500 234 567</h4>
-              </div>
-            </div>
+                <h4>
+                  <a href="tel:+996500234567">+996 500 234 567</a>
+                </h4>
+              </address>
+            </article>
 
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="contact-info-card">
-                <div className="icon-wrapper">
+            <article className="col-12 col-md-6 col-lg-4">
+              <address className="contact-info-card">
+                <figure className="icon-wrapper" aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
@@ -50,16 +51,17 @@ const ContactArea = () => {
                       fill="#ECC80B"
                     />
                   </svg>
-                </div>
-
+                </figure>
                 <p className="mb-0">Email address</p>
-                <h4>example@gmail.com</h4>
-              </div>
-            </div>
+                <h4>
+                  <a href="mailto:example@gmail.com">example@gmail.com</a>
+                </h4>
+              </address>
+            </article>
 
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="contact-info-card">
-                <div className="icon-wrapper">
+            <article className="col-12 col-md-6 col-lg-4">
+              <address className="contact-info-card">
+                <figure className="icon-wrapper" aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
@@ -72,76 +74,100 @@ const ContactArea = () => {
                       fill="#ECC80B"
                     />
                   </svg>
-                </div>
-
+                </figure>
                 <p className="mb-0">Office Address</p>
                 <h4>Vienna, Chicago, London</h4>
-              </div>
-            </div>
+              </address>
+            </article>
           </div>
         </div>
 
-        <div className="divider"></div>
+        <div className="divider" aria-hidden="true"></div>
 
-        {/* <div className="maps-wrap">
+        {/* Карта */}
+        {/* 
+        <section className="maps-wrap" aria-label="Our Location">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280012016!2d-74.14448732737499!3d40.69763123331177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1732385899288!5m2!1sen!2sbd"
+            src="..."
             referrerPolicy="no-referrer-when-downgrade"
+            title="Google Map showing company location"
           ></iframe>
-        </div> */}
+        </section> 
+        */}
 
-        <div className="contact-form-wrap contact-page-form">
+        <section className="contact-form-wrap contact-page-form">
           <div className="container">
             <div className="row justify-content-center mt-100">
               <div className="col-12 col-lg-10">
-                <div className="contact-form bg-secondary m-0 mt-0">
-                  <div className="section-heading text-center">
-                    <h2>
-                      Have Questions? <br />
-                      Contact us!
-                    </h2>
-                  </div>
+                <form
+                  className="contact-form bg-secondary m-0 mt-0"
+                  onSubmit={(e) => e.preventDefault()}
+                  noValidate
+                >
+                  <fieldset>
+                    <legend className="section-heading text-center">
+                      <h2>
+                        Have Questions? <br />
+                        Contact us!
+                      </h2>
+                    </legend>
 
-                  <div className="divider-sm"></div>
+                    <div className="divider-sm" aria-hidden="true"></div>
 
-                  <form onClick={(e) => e.preventDefault()}>
                     <div className="row g-4 g-xl-5">
                       <div className="col-12 col-lg-6">
+                        <label htmlFor="name" className="visually-hidden">
+                          Your Name
+                        </label>
                         <input
+                          id="name"
+                          name="name"
                           type="text"
                           className="form-control"
                           placeholder="Your Name"
+                          required
                         />
                       </div>
                       <div className="col-12 col-lg-6">
+                        <label htmlFor="email" className="visually-hidden">
+                          Email Address
+                        </label>
                         <input
+                          id="email"
+                          name="email"
                           type="email"
                           className="form-control"
                           placeholder="Email Address"
+                          required
                         />
                       </div>
                       <div className="col-12 col-lg-12">
+                        <label htmlFor="phone" className="visually-hidden">
+                          Your Phone
+                        </label>
                         <input
-                          type="text"
+                          id="phone"
+                          name="phone"
+                          type="tel"
                           className="form-control"
                           placeholder="Your Phone"
                         />
                       </div>
-                      {/* <div className="col-12 col-lg-6">
-                        <select className="form-control">
-                          <option value="">Select Subject</option>
-                          <option value="">Help &amp; Support</option>
-                          <option value="">Features Inquiry</option>
-                        </select>
-                      </div> */}
+
                       <div className="col-12">
+                        <label htmlFor="message" className="visually-hidden">
+                          Your Message
+                        </label>
                         <textarea
+                          id="message"
+                          name="message"
                           className="form-control"
-                          rows={20}
-                          cols={30}
+                          rows={6}
                           placeholder="Type your message"
+                          required
                         ></textarea>
                       </div>
+
                       <div className="col-12">
                         <div className="text-center">
                           <button
@@ -154,13 +180,13 @@ const ContactArea = () => {
                         </div>
                       </div>
                     </div>
-                  </form>
-                </div>
+                  </fieldset>
+                </form>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </>
   );
 };

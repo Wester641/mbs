@@ -21,7 +21,7 @@ const menu_data = [
       //   title: "Service",
       //   has_inner_dropdown: true,
       //   inner_submenu: [
-      //     { link: "/service", title: "Service" },
+      //     { link: "/services", title: "Service" },
       //     { link: "", title: "Service Details" },
       //   ],
       // },
@@ -74,10 +74,10 @@ const menu_data = [
   {
     id: 4,
     title: "Services",
-    link: "/service",
+    link: "/services",
     has_dropdown: false,
     // sub_menus: [
-    //   { link: "/service", title: "Service" },
+    //   { link: "/services", title: "Service" },
     //   { link: "", title: "Service Details" },
     //   { link: "/contact", title: "Contact" },
     // ],
@@ -88,7 +88,7 @@ const menu_data = [
     link: "/contact",
     has_dropdown: false,
     // sub_menus: [
-    //   { link: "/service", title: "Service" },
+    //   { link: "/services", title: "Service" },
     //   { link: "", title: "Service Details" },
     //   { link: "/contact", title: "Contact" },
     // ],

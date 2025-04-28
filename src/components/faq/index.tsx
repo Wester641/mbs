@@ -4,8 +4,13 @@ import HeaderOne from "../../layouts/headers/HeaderOne";
 import Breacrumb from "../../common/Breacrumb";
 import FooterOne from "../../layouts/footers/FooterOne";
 import BackToTop from "../../common/BackToTop";
+import { useEffect } from "react";
 
 const Faq = () => {
+  useEffect(() => {
+    document.title = "FAQ on Web Development & Marketing | MBS Soft";
+  }, []);
+
   return (
     <>
       <HeaderOne />

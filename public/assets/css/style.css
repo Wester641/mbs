@@ -4553,6 +4553,7 @@ form .btn {
   border-radius: 20px;
   border: 1px solid rgba(254, 254, 254, 0.2);
   padding: 50px 36px;
+  min-height: 434px;
 }
 .process-card-two h4 {
   margin-top: 40px;
@@ -5945,11 +5946,9 @@ form .btn {
 @media only screen and (max-width: 768px) {
   .canvas-dodecahedron2 {
     opacity: 0.5;
-
   }
   .canvas-dodecahedron3 {
     opacity: 0.4;
-
   }
 }
 .banner-text {

@@ -14,6 +14,7 @@ import FooterOne from "../../../layouts/footers/FooterOne";
 import BackToTop from "../../../common/BackToTop";
 import OurTools from "./OurTools";
 import CategoryArea from "./CategoryArea";
+import ProcessArea from "../home-2/ProcessArea";
 
 const HomeOne = () => {
   return (
@@ -25,6 +26,7 @@ const HomeOne = () => {
       <AboutArea />
       <CategoryArea />
       <ProjectsArea />
+      <ProcessArea />
       <WorkprocessArea />
       {/* <VideoAreaHomeOne /> */}
       {/* <AwardsArea /> */}

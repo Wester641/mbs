@@ -1,20 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Wrapper from "./layouts/Wrapper";
 import HomeOne from "./components/homes/home";
-// import HomeTwo from "./components/homes/home-2";
 import Aboutus from "./components/about-us";
 import Service from "./components/service";
-// import ServiceDetails from "./components";
-import Register from "./components/register";
-import Login from "./components/login";
-import PricingPlan from "./components/pricing-plan";
 import Faq from "./components/faq";
-import Team from "./components/team";
-import TeamDetails from "./components/team-details";
 import Portfolio from "./components/portfolio";
 import PortfolioDetails from "./components/portfolio-details";
-import Blog from "./components/blog";
-import BlogDetails from "./components/blog-details";
+
 import Contact from "./components/contact";
 import ErrorArea from "./components/error";
 import PortfolioDetailsArea from "./components/portfolio-details/PortfolioDetailsArea";
@@ -23,21 +15,12 @@ const router = createBrowserRouter([
   { path: "/", element: <HomeOne /> },
   // { path: "/home-2", element: <HomeTwo /> },
   { path: "/about-us", element: <Aboutus /> },
-  { path: "/service", element: <Service /> },
-  // { path: "/service-details", element: <ServiceDetails /> },
-  { path: "/register", element: <Register /> },
-  { path: "/login", element: <Login /> },
-  { path: "/pricing-plan", element: <PricingPlan /> },
+  { path: "/services", element: <Service /> },
   { path: "/faq", element: <Faq /> },
-  { path: "/team", element: <Team /> },
-  { path: "/team-details", element: <TeamDetails /> },
   { path: "/portfolio", element: <Portfolio /> },
   { path: "/portfolio-details", element: <PortfolioDetails /> },
-  { path: "/blog", element: <Blog /> },
-  { path: "/blog-details", element: <BlogDetails /> },
   { path: "/contact", element: <Contact /> },
   { path: "/portfolio/:id", element: <PortfolioDetailsArea /> },
-
   { path: "*", element: <ErrorArea /> },
 ]);
 

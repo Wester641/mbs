@@ -6,8 +6,13 @@ import HeaderOne from "../../layouts/headers/HeaderOne";
 import Breacrumb from "../../common/Breacrumb";
 import FooterOne from "../../layouts/footers/FooterOne";
 import BackToTop from "../../common/BackToTop";
+import { useEffect } from "react";
 
 const Service = () => {
+  useEffect(() => {
+    document.title = "Custom Web Development Services | MBS Soft";
+  }, []);
+
   return (
     <>
       <HeaderOne />
