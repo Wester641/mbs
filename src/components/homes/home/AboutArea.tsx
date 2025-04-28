@@ -86,6 +86,7 @@ const AboutArea: FC = () => {
                               alt="Rayan"
                             />
                             <img
+                              className="scroll-end"
                               src="/assets/img/partner-img/LOGO-UNAA.png"
                               alt="UNAA"
                             />
