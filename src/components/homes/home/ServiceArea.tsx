@@ -160,7 +160,7 @@ const ServiceArea = () => {
                     onMouseEnter={() => setActiveIndex(i)}
                     onMouseLeave={() => setActiveIndex(null)}
                     className={`service-slide-card ${
-                      activeIndex === i ? "active" : ""
+                      activeIndex === i ? "" : ""
                     }`}
                   >
                     <span className="material-symbols-outlined">
