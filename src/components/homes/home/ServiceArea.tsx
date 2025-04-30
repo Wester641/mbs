@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -55,9 +55,21 @@ const services = [
       "Design is more than aesthetics—it's about usability, engagement, and conversion. Our UX/UI experts create intuitive, visually striking, and user-friendly interfaces that enhance customer interactions and elevate your brand’s digital presence.",
   },
 ];
+const isMobileDevice = () => {
+  if (typeof window === "undefined") return false;
+  return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+};
 
 const ServiceArea = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleActivate = (i: any) => setActiveIndex(i);
+  const handleDeactivate = () => setActiveIndex(null);
+
+  useEffect(() => {
+    setIsMobile(isMobileDevice());
+  }, []);
 
   return (
     <>
@@ -157,10 +169,9 @@ const ServiceArea = () => {
               <SwiperSlide key={i} className="swiper-slide">
                 <Link to="">
                   <div
-                    onMouseEnter={() => setActiveIndex(i)}
-                    onTouchStart={() => setActiveIndex(i)}
-                    onMouseLeave={() => setActiveIndex(null)}
-                    onTouchEnd={() => setActiveIndex(null)}
+                    onClick={() => isMobile && handleActivate(i)}
+                    onMouseEnter={() => !isMobile && handleActivate(i)}
+                    onMouseLeave={() => !isMobile && handleDeactivate()}
                     className={`service-slide-card ${
                       activeIndex === i ? "" : ""
                     }`}
