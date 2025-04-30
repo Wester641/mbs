@@ -168,7 +168,7 @@ const ServiceArea = () => {
                     </span>
                     <h2
                       className={`service-title ${
-                        activeIndex === i ? "active blure-style" : ""
+                        activeIndex === i ? "active custom_blur" : ""
                       }`}
                     >
                       {item.title}

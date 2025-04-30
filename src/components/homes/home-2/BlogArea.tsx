@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 
- 
- 
-
 const BlogArea = () => {
   return (
     <>
@@ -23,8 +20,6 @@ const BlogArea = () => {
 
         <div className="container">
           <div className="row g-4">
-
-
             <div className="col-12 col-md-6 col-lg-4">
               <div className="blog-card-two">
                 <img src="/assets/img/bg-img/28.png" alt="" />
@@ -34,11 +29,12 @@ const BlogArea = () => {
                     <div className="dot"></div>
                     <a href="#">Branding</a>
                   </div>
-                  <Link className="post-title" to="/blog-details">Providing brilliant ideas For your business</Link>
+                  <Link className="post-title" to="/blog-details">
+                    Providing brilliant ideas For your business
+                  </Link>
                 </div>
               </div>
             </div>
-
 
             <div className="col-12 col-md-6 col-lg-4">
               <div className="blog-card-two">
@@ -49,11 +45,12 @@ const BlogArea = () => {
                     <div className="dot"></div>
                     <a href="#">Branding</a>
                   </div>
-                  <Link className="post-title" to="/blog-details">Top tools for efficient web development</Link>
+                  <Link className="post-title" to="/blog-details">
+                    Top tools for efficient web development
+                  </Link>
                 </div>
               </div>
             </div>
-
 
             <div className="col-12 col-md-6 col-lg-4">
               <div className="blog-card-two">
@@ -64,11 +61,12 @@ const BlogArea = () => {
                     <div className="dot"></div>
                     <a href="#">Branding</a>
                   </div>
-                  <Link className="post-title" to="/blog-details">The Role Of Color Theory In Web Design</Link>
+                  <Link className="post-title" to="/blog-details">
+                    The Role Of Color Theory In Web Design
+                  </Link>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 

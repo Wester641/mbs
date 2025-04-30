@@ -7,11 +7,10 @@ const ProcessArea = () => {
         <div className="container">
           <div className="row g-3 justify-content-center">
             <div className="col-12 col-lg-6">
-              <div className="section-heading text-center">
+              <div className="section-heading_custom text-center">
                 <h2 className="mb-0">
-                  Simple Our Work
-                  <br />
-                  Process
+                  Custom Web Development Services | Mobile App Development
+                  Company | UI/UX Design & Website Maintenance Solutions
                 </h2>
               </div>
             </div>
@@ -76,10 +75,11 @@ const ProcessArea = () => {
                   />
                 </svg>
 
-                <h4>Data collection, design preparation</h4>
+                <h4>Data collection & design preparation</h4>
                 <p className="mb-0">
-                  Design Strateg Invole Comprehensive Approch To Ensuring That
-                  The Design Meets The Goals And Needs
+                  We gather your requirements, analyze your goals, and craft a
+                  tailored design strategy to build a user-centric and visually
+                  engaging digital product.
                 </p>
               </div>
             </div>
@@ -101,8 +101,9 @@ const ProcessArea = () => {
 
                 <h4>Development</h4>
                 <p className="mb-0">
-                  Design Strateg Invole Comprehensive Approch To Ensuring That
-                  The Design Meets The Goals And Needs
+                  Our experienced developers turn designs into high-performing,
+                  scalable websites and mobile applications using the latest
+                  technologies and best coding practices.
                 </p>
               </div>
             </div>
@@ -161,10 +162,11 @@ const ProcessArea = () => {
                   </defs>
                 </svg>
 
-                <h4>Testing and support</h4>
+                <h4>Testing & support</h4>
                 <p className="mb-0">
-                  Design Strateg Invole Comprehensive Approch To Ensuring That
-                  The Design Meets The Goals And Needs
+                  We rigorously test every feature to ensure flawless
+                  performance and provide ongoing support to keep your website
+                  or app secure, updated, and optimized.
                 </p>
               </div>
             </div>
