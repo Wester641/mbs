@@ -1486,12 +1486,6 @@ picture.jarallax-img img {
   }
 }
 
-.blure-style {
-  /* display: none !important; */
-  opacity: 0;
-  visibility: hidden;
-}
-
 @media (max-width: 1024px) {
   .service-slide-card.active h2 {
     bottom: 140px !important;
@@ -6063,4 +6057,10 @@ form .btn {
 
 .custom_blur {
   filter: blur(20px);
+}
+
+.blure-style {
+  /* display: none !important; */
+  opacity: 0;
+  visibility: hidden;
 }

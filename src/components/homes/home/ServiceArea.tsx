@@ -8,7 +8,7 @@ const services = [
     icon: "web",
     title: "Web Development",
     description:
-      "We craft high-performance, scalable, and secure websites tailored to your business needs. Whether it's a corporate website, eCommerce platform, or custom web application, our expert developers ensure a seamless user experience and cutting-edge functionality.",
+      "We build high-performance, scalable, and secure websites customized for your business. From corporate sites to eCommerce platforms or custom web apps, our expert developers deliver seamless user experiences and advanced functionality.",
   },
   {
     icon: "ads_click",
@@ -21,7 +21,7 @@ const services = [
     icon: "stream_apps",
     title: "Mobile Development",
     description:
-      "Empower your business with a mobile-first approach. We build intuitive and high-performance mobile applications for iOS and Android, ensuring smooth functionality, engaging UI, and a flawless user experience. From MVPs to full-scale mobile solutions, we bring your ideas to life.",
+      "Boost your business with mobile-first solutions. We create intuitive, high-performance iOS and Android apps with engaging UI and seamless user experience, turning your ideas into MVPs or full-scale mobile applications.",
   },
   {
     icon: "design_services",
@@ -33,7 +33,7 @@ const services = [
     icon: "web",
     title: "Web Development",
     description:
-      "We craft high-performance, scalable, and secure websites tailored to your business needs. Whether it's a corporate website, eCommerce platform, or custom web application, our expert developers ensure a seamless user experience and cutting-edge functionality.",
+      "We build high-performance, scalable, and secure websites customized for your business. From corporate sites to eCommerce platforms or custom web apps, our expert developers deliver seamless user experiences and advanced functionality.",
   },
   {
     icon: "ads_click",
@@ -46,7 +46,7 @@ const services = [
     icon: "stream_apps",
     title: "Mobile Development",
     description:
-      "Empower your business with a mobile-first approach. We build intuitive and high-performance mobile applications for iOS and Android, ensuring smooth functionality, engaging UI, and a flawless user experience. From MVPs to full-scale mobile solutions, we bring your ideas to life.",
+      "Boost your business with mobile-first solutions. We create intuitive, high-performance iOS and Android apps with engaging UI and seamless user experience, turning your ideas into MVPs or full-scale mobile applications.",
   },
   {
     icon: "design_services",
@@ -158,7 +158,9 @@ const ServiceArea = () => {
                 <Link to="">
                   <div
                     onMouseEnter={() => setActiveIndex(i)}
+                    onTouchStart={() => setActiveIndex(i)}
                     onMouseLeave={() => setActiveIndex(null)}
+                    onTouchEnd={() => setActiveIndex(null)}
                     className={`service-slide-card ${
                       activeIndex === i ? "" : ""
                     }`}
@@ -175,7 +177,7 @@ const ServiceArea = () => {
                     </h2>
                     <p
                       className={`service-description ${
-                        activeIndex === i ? "active" : ""
+                        activeIndex === i ? "" : ""
                       }`}
                     >
                       {item.description}
