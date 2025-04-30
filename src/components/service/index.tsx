@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const Service = () => {
   useEffect(() => {
-    document.title = "Custom Web Development Services | MBS Soft";
+    document.title = "Custom Web Development Services | MBC Soft";
   }, []);
 
   return (

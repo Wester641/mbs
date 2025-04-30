@@ -8,7 +8,7 @@ import PortfolioArea from "./PortfolioArea";
 
 const Portfolio = () => {
   useEffect(() => {
-    document.title = "Web & Mobile Development Portfolio | MBS Soft";
+    document.title = "Web & Mobile Development Portfolio | MBC Soft";
   }, []);
 
   return (

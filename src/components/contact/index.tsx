@@ -8,7 +8,7 @@ import ContactArea from "./ContactArea";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "Contact Us | MBS Soft";
+    document.title = "Contact Us | MBC Soft";
   }, []);
   return (
     <>

@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const Faq = () => {
   useEffect(() => {
-    document.title = "FAQ on Web Development & Marketing | MBS Soft";
+    document.title = "FAQ on Web Development & Marketing | MBC Soft";
   }, []);
 
   return (
