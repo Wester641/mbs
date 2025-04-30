@@ -7,9 +7,9 @@ import OffCanvas from "../../common/OffCanvas";
 const HeaderOne = ({ style_2 }: any) => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || "light-mode";
+      return localStorage.getItem("theme") || "dark-mode";
     }
-    return "light-mode";
+    return "dark-mode";
   });
 
   useEffect(() => {
