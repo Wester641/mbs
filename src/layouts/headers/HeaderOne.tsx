@@ -47,6 +47,10 @@ const HeaderOne = ({ style_2 }: any) => {
     }
   };
 
+  const handleReload = () => {
+    window.location.reload();
+  };
+
   return (
     <>
       <header
@@ -160,10 +164,18 @@ const HeaderOne = ({ style_2 }: any) => {
                     theme === "light-mode" ? "" : "light-mode-active"
                   }`}
                 >
-                  <span className="material-symbols-outlined moon">
+                  <span
+                    className="material-symbols-outlined moon"
+                    onClick={handleReload}
+                  >
                     clear_day
                   </span>
-                  <span className="material-symbols-outlined sun">bedtime</span>
+                  <span
+                    className="material-symbols-outlined sun"
+                    onClick={handleReload}
+                  >
+                    bedtime
+                  </span>
                 </button>
                 {style_2 ? (
                   <div className="mb-3 mb-lg-0" id="sideMenuButton">

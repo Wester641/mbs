@@ -54,7 +54,7 @@ const ContactArea = () => {
                 </figure>
                 <p className="mb-0">Phone number</p>
                 <h4>
-                  <a href="tel:+996500234567">+996 553 97 91 01</a>
+                  <a href="tel:+996553979101">+996 553 97 91 01</a>
                 </h4>
               </address>
             </article>
@@ -77,7 +77,7 @@ const ContactArea = () => {
                 </figure>
                 <p className="mb-0">Email address</p>
                 <h4>
-                  <a href="mailto:example@gmail.com">contact@mbcsoft.net</a>
+                  <a href="mailto:contact@mbcsoft.net">contact@mbcsoft.net</a>
                 </h4>
               </address>
             </article>
