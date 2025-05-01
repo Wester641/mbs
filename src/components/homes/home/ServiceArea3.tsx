@@ -67,10 +67,10 @@ const ServiceArea3 = () => {
             loop={true}
             slidesPerView={4}
             spaceBetween={30}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 4000,
+            //   disableOnInteraction: false,
+            // }}
             navigation={{
               nextEl: ".service-button-next",
               prevEl: ".service-button-prev",
@@ -125,7 +125,7 @@ const ServiceArea3 = () => {
                     </h2>
                     <p
                       className={`service-description ${
-                        activeIndex === i ? "active" : "p-3"
+                        activeIndex === i ? "active" : "p-0"
                       }`}
                     >
                       {item.description}

@@ -6071,9 +6071,10 @@ form .btn {
 }
 
 .blur-background {
-  background-color: blur(20px);
+  background-color: blur(50px);
 }
 
-.p-3 {
-  padding: 3px;
+.p-0 {
+  padding: 0px !important;
+  min-height: 330px !important;
 }
