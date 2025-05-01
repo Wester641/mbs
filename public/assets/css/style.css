@@ -6075,6 +6075,6 @@ form .btn {
 }
 
 .p-0 {
-  padding: 0px !important;
+  padding: 0px 0px 0px 3px !important;
   min-height: 330px !important;
 }
