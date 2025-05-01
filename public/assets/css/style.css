@@ -6072,10 +6072,10 @@ form .btn {
 
 .blur-background {
   /* background-color: blur(50px); */
-  background-color: #ecb50b;
+  background-color: #ecb50b !important;
 }
 
 .p-0 {
   padding: 0px 0px 0px 3px !important;
-  min-height: 330px !important;
+  min-height: 333px !important;
 }
