@@ -15,6 +15,7 @@ import BackToTop from "../../../common/BackToTop";
 import OurTools from "./OurTools";
 import CategoryArea from "./CategoryArea";
 import ProcessArea from "../home-2/ProcessArea";
+import ServiceArea3 from "./ServiceArea3";
 // import PartnerArea from "./PartnerArea";
 
 const HomeOne = () => {
@@ -24,6 +25,7 @@ const HomeOne = () => {
       <HeroArea />
       <CtaArea />
       <ServiceArea />
+      <ServiceArea3 />
       <AboutArea />
       {/* <PartnerArea /> */}
       <CategoryArea />

@@ -1458,7 +1458,7 @@ picture.jarallax-img img {
 .service-title {
   position: absolute;
   bottom: 0;
-  transition: bottom 0.3s ease;
+  transition: bottom 0.5s ease;
 }
 
 .service-description {
@@ -1468,7 +1468,7 @@ picture.jarallax-img img {
 }
 
 .service-slide-card.active .service-title {
-  bottom: 140px;
+  bottom: 7em;
 }
 
 .service-slide-card.active .service-description {
@@ -6063,4 +6063,8 @@ form .btn {
   /* display: none !important; */
   opacity: 0;
   visibility: hidden;
+}
+
+.mb-10 {
+  margin-bottom: 50px;
 }
