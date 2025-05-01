@@ -1536,8 +1536,11 @@ picture.jarallax-img img {
   visibility: visible;
   color: #1a1a1a;
   bottom: 50px;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(100px);
+  /* background-color: #ecc80b !important; */
+  border-radius: 8px;
+
+  -webkit-backdrop-filter: blur(200px);
 }
 .service-slide-card:hover i,
 .service-slide-card:hover span,
@@ -6071,11 +6074,10 @@ form .btn {
 }
 
 .blur-background {
-  /* background-color: blur(50px); */
-  background-color: #ecb50b !important;
+  background-color: blur(50px);
 }
 
 .p-0 {
-  padding: 0px 0px 0px 3px !important;
+  padding: 0px 3px 0px 5px !important;
   min-height: 333px !important;
 }
