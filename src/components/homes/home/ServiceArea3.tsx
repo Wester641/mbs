@@ -8,7 +8,7 @@ const services = [
     icon: "web",
     title: "Web Development",
     description:
-      "We build high-performance, scalable, and secure websites customized for your business. From corporate sites to eCommerce platforms or custom web apps, our expert developers deliver seamless user experiences and advanced functionality.",
+      "We build high-performance, scalable, secure websites tailored to your business. From corporate sites to eCommerce or custom web apps, our expert developers deliver seamless experiences and advanced functionality.",
   },
   {
     icon: "ads_click",
@@ -33,7 +33,7 @@ const services = [
     icon: "web",
     title: "Web Development",
     description:
-      "We build high-performance, scalable, and secure websites customized for your business. From corporate sites to eCommerce platforms or custom web apps, our expert developers deliver seamless user experiences and advanced functionality.",
+      "We build high-performance, scalable, secure websites tailored to your business. From corporate sites to eCommerce or custom web apps, our expert developers deliver seamless experiences and advanced functionality.",
   },
   {
     icon: "ads_click",
@@ -118,14 +118,14 @@ const ServiceArea3 = () => {
                     </span>
                     <h2
                       className={`service-title ${
-                        activeIndex === i ? "blure-style" : "mb-10"
+                        activeIndex === i ? "blure-style blur-background" : ""
                       }`}
                     >
                       {item.title}
                     </h2>
                     <p
                       className={`service-description ${
-                        activeIndex === i ? "active" : "mb-10"
+                        activeIndex === i ? "active" : "p-3"
                       }`}
                     >
                       {item.description}

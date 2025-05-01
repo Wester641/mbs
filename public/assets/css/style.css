@@ -414,6 +414,7 @@ ol li {
 .btn-link:hover,
 .btn-link:focus {
   color: #ecc80b;
+  background-color: blur(20px);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -1464,7 +1465,7 @@ picture.jarallax-img img {
 .service-description {
   position: absolute;
   bottom: 0;
-  transition: bottom 0.3s ease;
+  transition: bottom 0.5s ease;
 }
 
 .service-slide-card.active .service-title {
@@ -1472,6 +1473,8 @@ picture.jarallax-img img {
 }
 
 .service-slide-card.active .service-description {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   bottom: 45px;
 }
 
@@ -1533,6 +1536,8 @@ picture.jarallax-img img {
   visibility: visible;
   color: #1a1a1a;
   bottom: 50px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(20px);
 }
 .service-slide-card:hover i,
 .service-slide-card:hover span,
@@ -2228,7 +2233,7 @@ picture.jarallax-img img {
     font-size: 16px;
   }
   .service-slide-card.active .service-description {
-    bottom: 0;
+    bottom: 50px;
   }
 }
 
@@ -6065,6 +6070,10 @@ form .btn {
   visibility: hidden;
 }
 
-.mb-10 {
-  margin-bottom: 50px;
+.blur-background {
+  background-color: blur(20px);
+}
+
+.p-3 {
+  padding: 3px;
 }
