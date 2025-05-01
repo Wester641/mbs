@@ -1535,7 +1535,7 @@ picture.jarallax-img img {
   opacity: 1;
   visibility: visible;
   color: #1a1a1a;
-  bottom: 50px;
+  bottom: 48px;
   backdrop-filter: blur(100px);
   /* background-color: #ecc80b !important; */
   border-radius: 8px;
