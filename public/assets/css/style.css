@@ -6071,7 +6071,8 @@ form .btn {
 }
 
 .blur-background {
-  background-color: blur(50px);
+  /* background-color: blur(50px); */
+  background-color: #ecb50b;
 }
 
 .p-0 {
