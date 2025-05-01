@@ -246,7 +246,16 @@ const HeaderOne = ({ style_2 }: any) => {
                     </a>
                   </div>
                 ) : (
-                  <Link className="btn btn-primary" to="/contact">
+                  <Link
+                    className="btn btn-primary"
+                    to="/contact"
+                    onClick={() =>
+                      window.gtag("event", "click", {
+                        event_category: "button",
+                        event_label: "signup_button",
+                      })
+                    }
+                  >
                     <span>GET IN TOUCH</span>
                     <span>GET IN TOUCH</span>
                   </Link>
