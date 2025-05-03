@@ -6,10 +6,11 @@ import Service from "./components/service";
 import Faq from "./components/faq";
 import Portfolio from "./components/portfolio";
 import PortfolioDetails from "./components/portfolio-details";
-
 import Contact from "./components/contact";
 import ErrorArea from "./components/error";
 import PortfolioDetailsArea from "./components/portfolio-details/PortfolioDetailsArea";
+
+import useScrollTracking from "./hooks/useScrollTracking";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomeOne /> },
@@ -25,6 +26,8 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useScrollTracking("Scrolled 50% in Home page");
+
   return (
     <Wrapper>
       <RouterProvider router={router} />

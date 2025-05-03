@@ -5,8 +5,11 @@ import Breacrumb from "../../common/Breacrumb";
 import FooterOne from "../../layouts/footers/FooterOne";
 import BackToTop from "../../common/BackToTop";
 import { useEffect } from "react";
+import useScrollTracking from "../../hooks/useScrollTracking";
 
 const Faq = () => {
+  useScrollTracking("Scrolled 50% in Faq page");
+
   useEffect(() => {
     document.title = "FAQ on Web Development & Marketing | MBC Soft";
   }, []);
