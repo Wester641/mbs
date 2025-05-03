@@ -6081,3 +6081,15 @@ form .btn {
   padding: 0px 3px 0px 5px !important;
   min-height: 333px !important;
 }
+
+.success-color {
+  color: #32cd32;
+}
+
+.loading-color {
+  color: #ecc80b;
+}
+
+.error-color {
+  color: #ff0000;
+}

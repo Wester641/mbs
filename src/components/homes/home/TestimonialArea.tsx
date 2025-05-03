@@ -1,28 +1,50 @@
-import { useState } from "react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import axios from "axios";
+import { useState } from "react";
+
+type Inputs = {
+  name: string;
+  phone: string;
+  email: string;
+  comment: string;
+};
 
 const TestimonialArea = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const [error, setError] = useState<string>("");
+  const [success, setSuccess] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
+  setTimeout(() => {
+    setError("");
+    setSuccess("");
+  }, 3000);
 
-    const data = {
-      name,
-      email,
-      phone,
-      message,
-    };
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
 
-    console.log(data);
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    setLoading(true);
+    axios
+      .post("https://mbcsoft.net/backend/cpanel_mail.php", data)
+      .then((res) => {
+        setLoading(false);
+        setSuccess(
+          res.data.message || res.data.status || "Message sent successfully!"
+        );
+      })
+      .catch((err) => {
+        console.log(err);
+        setError(
+          err.response?.data?.message || err.message || "Failed to send message"
+        );
+      });
+    reset();
   };
 
   return (
@@ -269,43 +291,48 @@ const TestimonialArea = () => {
           <div className="contact-form">
             <h3 className="mb-4">Get in Touch</h3>
 
-            <form className="mt-3">
+            <form onSubmit={handleSubmit(onSubmit)} className="mt-3">
               <input
-                onChange={(e) => setName(e.target.value)}
-                type="text"
-                name="text"
+                {...register("name", { required: true, maxLength: 20 })}
                 className="form-control"
                 placeholder="Your Name"
               />
+              {errors.name && (
+                <span style={{ color: "red" }}>Name is required</span>
+              )}
               <input
-                onChange={(e) => setEmail(e.target.value)}
-                type="email"
-                name="email"
+                {...register("email", { required: true })}
                 className="form-control"
                 placeholder="Email Address"
               />
+              {errors.email && (
+                <span style={{ color: "red" }}>Email address is required</span>
+              )}
               <input
-                onChange={(e) => setPhone(e.target.value)}
-                type="text"
-                name="phone"
+                {...register("phone", { required: true })}
                 className="form-control"
                 placeholder="Your Phone"
               />
+              {errors.phone && (
+                <span style={{ color: "red" }}>Phone number is required</span>
+              )}
               <textarea
-                onChange={(e) => setMessage(e.target.value)}
-                name="message"
+                {...register("comment")}
                 className="form-control"
                 placeholder="Message"
                 id="message"
               ></textarea>
-              <button
-                type="submit"
-                onClick={handleSubmit}
-                className="btn btn-primary mt-3"
-              >
+              <button type="submit" className="btn btn-primary mt-3">
                 <span>SEND MESSAGE</span>
                 <span>SEND MESSAGE</span>
               </button>
+              {success ? (
+                <span style={{ color: "green" }}>{success}</span>
+              ) : loading ? (
+                <span style={{ color: "yellow" }}>Loading...</span>
+              ) : (
+                error && <span style={{ color: "red" }}>{error}</span>
+              )}
             </form>
           </div>
         </div>

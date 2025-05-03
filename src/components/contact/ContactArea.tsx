@@ -1,26 +1,49 @@
+import axios from "axios";
 import { useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+
+type Inputs = {
+  name: string;
+  phone: string;
+  email: string;
+  comment: string;
+};
 
 const ContactArea = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const [error, setError] = useState<string>("");
+  const [success, setSuccess] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
+  setTimeout(() => {
+    setError("");
+    setSuccess("");
+  }, 3000);
 
-    const data = {
-      name,
-      email,
-      phone,
-      message,
-    };
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
 
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    setLoading(true);
     console.log(data);
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
+    axios
+      .post("https://mbcsoft.net/backend/cpanel_mail.php", data)
+      .then((res) => {
+        setLoading(false);
+        setSuccess(
+          res.data.message || res.data.status || "Message sent successfully!"
+        );
+      })
+      .catch((err) => {
+        console.log(err);
+        setError(
+          err.response?.data?.message || err.message || "Failed to send message"
+        );
+      });
+    reset();
   };
   return (
     <>
@@ -158,7 +181,7 @@ const ContactArea = () => {
               <div className="col-12 col-lg-10">
                 <form
                   className="contact-form bg-secondary m-0 mt-0"
-                  onSubmit={(e) => e.preventDefault()}
+                  onSubmit={handleSubmit(onSubmit)}
                   noValidate
                 >
                   <fieldset>
@@ -177,41 +200,50 @@ const ContactArea = () => {
                           Your Name
                         </label>
                         <input
-                          onChange={(e) => setName(e.target.value)}
+                          {...register("name", {
+                            required: true,
+                            maxLength: 20,
+                          })}
                           id="name"
-                          name="name"
-                          type="text"
                           className="form-control"
                           placeholder="Your Name"
-                          required
                         />
+                        {errors.name && (
+                          <span style={{ color: "red" }}>Name is required</span>
+                        )}
                       </div>
                       <div className="col-12 col-lg-6">
                         <label htmlFor="email" className="visually-hidden">
                           Email Address
                         </label>
                         <input
-                          onChange={(e) => setEmail(e.target.value)}
+                          {...register("email", { required: true })}
                           id="email"
-                          name="email"
-                          type="email"
                           className="form-control"
                           placeholder="Email Address"
-                          required
                         />
+                        {errors.email && (
+                          <span style={{ color: "red" }}>
+                            Email address is required
+                          </span>
+                        )}
                       </div>
                       <div className="col-12 col-lg-12">
                         <label htmlFor="phone" className="visually-hidden">
                           Your Phone
                         </label>
                         <input
-                          onChange={(e) => setPhone(e.target.value)}
+                          {...register("phone", { required: true })}
                           id="phone"
-                          name="phone"
                           type="tel"
                           className="form-control"
                           placeholder="Your Phone"
                         />
+                        {errors.phone && (
+                          <span style={{ color: "red" }}>
+                            Phone is required
+                          </span>
+                        )}
                       </div>
 
                       <div className="col-12">
@@ -219,20 +251,17 @@ const ContactArea = () => {
                           Your Message
                         </label>
                         <textarea
-                          onChange={(e) => setMessage(e.target.value)}
+                          {...register("comment")}
                           id="message"
-                          name="message"
                           className="form-control"
                           rows={6}
                           placeholder="Type your message"
-                          required
                         ></textarea>
                       </div>
 
                       <div className="col-12">
                         <div className="text-center">
                           <button
-                            onClick={handleSubmit}
                             type="submit"
                             className="btn btn-primary rounded-pill"
                           >
@@ -243,6 +272,13 @@ const ContactArea = () => {
                       </div>
                     </div>
                   </fieldset>
+                  {success ? (
+                    <span className="success-color">{success}</span>
+                  ) : loading ? (
+                    <span className="loading-color">Loading...</span>
+                  ) : (
+                    error && <span className="error-color">{error}</span>
+                  )}
                 </form>
               </div>
             </div>

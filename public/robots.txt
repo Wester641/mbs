@@ -1,0 +1,16 @@
+# robots.txt для https://mbcsoft.net
+
+User-agent: *
+
+Allow: /
+
+Disallow: /404/
+Disallow: /500/
+Disallow: /manifest.json
+Disallow: /favicon.ico
+Disallow: /sw.js                # service worker
+Disallow: /service-worker.js    # на случай других config
+
+# Disallow: /portfolio-details/
+
+Sitemap: https://mbcsoft.net/sitemap.xml
