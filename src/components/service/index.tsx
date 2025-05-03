@@ -13,7 +13,7 @@ const Service = () => {
   useScrollTracking("Scrolled 50% in Services page");
 
   useEffect(() => {
-    document.title = "Custom Web Development Services | MBC Soft";
+    document.title = "Custom Web Development Services | ExampleSoft";
   }, []);
 
   return (

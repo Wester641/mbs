@@ -11,7 +11,7 @@ const Faq = () => {
   useScrollTracking("Scrolled 50% in Faq page");
 
   useEffect(() => {
-    document.title = "FAQ on Web Development & Marketing | MBC Soft";
+    document.title = "FAQ on Web Development & Marketing | ExampleSoft";
   }, []);
 
   return (

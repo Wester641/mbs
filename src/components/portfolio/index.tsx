@@ -11,7 +11,7 @@ const Portfolio = () => {
   useScrollTracking("Scrolled 50% in Faq page");
 
   useEffect(() => {
-    document.title = "Web & Mobile Development Portfolio | MBC Soft";
+    document.title = "Web & Mobile Development Portfolio | ExampleSoft";
   }, []);
 
   return (

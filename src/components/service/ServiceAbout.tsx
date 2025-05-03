@@ -18,7 +18,7 @@ const ServiceAbout = () => {
                 </div>
 
                 <p className="mb-0">
-                  MBC Soft is a global IT company specializing in web and mobile
+                  ExampleSoft is a global IT company specializing in web and mobile
                   development, UX/UI design, and digital marketing. We create
                   cutting-edge solutions that help businesses grow and succeed
                   in the digital world. With a focus on quality, innovation, and

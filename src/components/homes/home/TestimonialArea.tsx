@@ -95,7 +95,7 @@ const TestimonialArea = () => {
                 >
                   <SwiperSlide className="swiper-slide">
                     <p>
-                      "Working with MBC Soft was a game-changer for our
+                      "Working with ExampleSoft was a game-changer for our
                       business. They delivered a sleek, fast, and modern website
                       that perfectly represents our brand. Highly recommend!"
                     </p>
@@ -127,7 +127,7 @@ const TestimonialArea = () => {
 
                   <SwiperSlide className="swiper-slide">
                     <p>
-                      "MBC Soft took our outdated website and completely
+                      "ExampleSoft took our outdated website and completely
                       transformed it. The new design is stunning, and our
                       conversion rates have doubled since launch!"
                     </p>
@@ -157,7 +157,7 @@ const TestimonialArea = () => {
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <p>
-                      "I was amazed by how quickly and efficiently MBC Soft
+                      "I was amazed by how quickly and efficiently ExampleSoft
                       developed our platform. The team is highly skilled and
                       always ready to assist. Looking forward to our next
                       project!"
@@ -174,7 +174,7 @@ const TestimonialArea = () => {
                   <SwiperSlide className="swiper-slide">
                     <p>
                       "SEO, web development, and digital marketing—all in one
-                      place! Thanks to MBC Soft, our online presence has grown
+                      place! Thanks to ExampleSoft, our online presence has grown
                       significantly, and we’re seeing real business results."
                     </p>
                     <div className="border-line"></div>
@@ -188,7 +188,7 @@ const TestimonialArea = () => {
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <p>
-                      "Спасибо команде MBC Soft за потрясающий сайт! Дизайн —
+                      "Спасибо команде ExampleSoft за потрясающий сайт! Дизайн —
                       огонь, скорость загрузки — молния, а функционал — просто
                       топ. Будем работать дальше!"
                     </p>
@@ -218,7 +218,7 @@ const TestimonialArea = () => {
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <p>
-                      "Очень доволен сотрудничеством с MBC Soft. Команда
+                      "Очень доволен сотрудничеством с ExampleSoft. Команда
                       понимает бизнес-задачи, предлагает решения и всегда на
                       связи. Отличный сервис!"
                     </p>

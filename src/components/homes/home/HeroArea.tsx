@@ -68,7 +68,7 @@ const HeroArea = () => {
                       data-wow-duration="1000ms"
                       data-wow-delay="1000ms"
                     >
-                      MBC Soft is a global IT company specializing in web
+                      ExampleSoft is a global IT company specializing in web
                       development, UI/UX design, and tailored digital solutions
                       for businesses. We help companies worldwide build modern,
                       high-performance websites and IT systems. Let’s turn your
